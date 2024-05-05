@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="canvas"></canvas>
+
     <header>
         <h1>PLEBS</h1>
     </header>
@@ -16,47 +18,67 @@
 						<li><a href="contact.html">Контакти</a></li>
 				</ul>
 		</nav>
-<div class="content">
-	<h2>Доступні шмотки:</h2>
-    <section class="products">
-        <!-- Repeating for each item with its name, image, and price -->
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 1</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 2</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 3</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 4</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 5</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-        <div class="product">
-            <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
-            <p class="product-title">Футболка 6</p>
-            <p class="product-price">999 UAH</p>
-        </div>
-    </section>
-		<br>
+        <div class="root">
+
+            <div class="left-content">
+                <h2>Доступні шмотки:</h2>
+                <section class="products">
+                    <!-- Repeating for each item with its name, image, and price -->
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 1</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 2</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 3</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 4</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 5</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                    <div class="product">
+                        <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image">
+                        <p class="product-title">Футболка 6</p>
+                        <p class="product-price">999 UAH</p>
+                    </div>
+                </section>
+                <!-- <section class="product-details">
+                    <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-detail-image">
+                    <h2>Футболка 1</h2>
+                    <p class="product-description">Detailed description of Футболка 1. It's the best quality you can find!</p>
+                    <p class="product-price-detail">999 UAH</p>
+                </section> -->
 
 
-		</div>	
+                    </div>	
+
+            <div class="right-content">
+                <section class="product-details">
+                    <img src="t-shirt-svgrepo-com.svg" alt="Футболка" class="product-image ">
+                    <h2>Футболка 1</h2>
+                    <p class="product-description">Detailed description of Футболка 1. It's the best quality you can find!</p>
+                    <p class="product-price-detail">999 UAH</p>
+                </section>
+            </div>
+
+    </div>
+
     <footer>
         <p>© 2024 PLEBS. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
