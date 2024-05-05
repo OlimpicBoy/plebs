@@ -1,0 +1,99 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Courier New', monospace;
+	background-color: #fff;
+	color: #000;
+}
+
+header {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+h1 {
+	font-size: 24px;
+	letter-spacing: 2px;
+	/* font-weight: lighter; */
+}
+
+.products {
+	margin: 0 auto;
+	display: grid;
+	max-width: 800px;
+	grid-template-columns: repeat(4, 1fr); /* Two columns layout */
+	gap: 40px 40px;
+	padding: 20px;
+}
+
+.product {
+	border: 4px solid #000;
+	text-align: center;
+	padding: 16px;
+}
+
+.product:hover {
+	border-color: rgb(43, 19, 183);
+	outline: 4px solid rgb(43, 19, 183);
+}
+
+.product-image {
+	width: 100%; /* Responsive image */
+	height: auto;
+}
+
+.product-title, .product-price {
+	margin: 0;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #000;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+nav {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	display: grid;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+
+}
+
+nav ul li {
+	text-align: center;
+	/* flex: 1; */
+}
+
+.content {
+	margin: 0 auto;
+	display: grid;
+	max-width: 800px;
+ }
