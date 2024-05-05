@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const maxRects = max; // Maximum number of rectangles
   const maxWidthHeight = max; // Max size for any dimension
   const phi = (1 + Math.sqrt(5)) / 2; // Golden Ratio
-  const availableSizes = [5, 8, 13, 21, 34, 55];
+  const availableSizes = [2, 3, 5, 8, 13, 21]; // Fibonacci numbers
   // Adjust canvas size to window size
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 
     // Generate and draw rectangles
-    for (let i = 0; i < 6000; i++) {
+    for (let i = 0; i < maxRects; i++) {
       let width = getRandomItemFromArray(availableSizes);
       let height = width * phi;
       if (height > maxWidthHeight) {
@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
       let y = Math.random() * (canvas.height - height);
 
       // ctx.fillStyle =  white or black
-      ctx.fillStyle = Math.random() > 0.99 ? "rgb(0, 255, 0)" : "white";
+      const random = Math.random();
+      ctx.fillStyle =
+        random > 0.9 ? "rgb(0, 255, 0)" : random > 0.45 ? "white" : "black";
       ctx.fillRect(x, y, width, height);
     }
   }

@@ -1,0 +1,34 @@
+.contact-info, .contact-form {
+	width: 61.8%; /* Golden Ratio width */
+	margin: 0 auto; /* Centering the content */
+	padding: 21px; /* Fibonacci padding */
+}
+
+.contact-info ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-info li, .contact-form form {
+	margin-bottom: 21px; /* Fibonacci margin */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 100%; /* Full width for inputs */
+	padding: 8px 13px; /* Fibonacci padding */
+	margin-bottom: 13px; /* Fibonacci margin */
+}
+
+.contact-form button {
+	padding: 8px 21px; /* Fibonacci padding */
+	background-color: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	background-color: darkgrey;
+}
