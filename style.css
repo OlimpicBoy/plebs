@@ -160,3 +160,15 @@ canvas {
 	z-index:  -10;
 }
 input, textarea {border: 2px solid;}
+
+@media screen  and (max-width: 768px){
+	.left-content {
+		/* display: grid; */
+	}
+	.right-content {
+		display: none;
+	}
+	/* canvas {
+		display: none;
+	} */
+}

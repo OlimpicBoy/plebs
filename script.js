@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const max = 21;
+  const max = window.innerWidth < 600 ? 5 : 20;
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
-  const maxRects = max; // Maximum number of rectangles
+  const maxRects = max;
   const maxWidthHeight = max; // Max size for any dimension
   const phi = (1 + Math.sqrt(5)) / 2; // Golden Ratio
   const availableSizes = [2, 3, 5, 8, 13, 21]; // Fibonacci numbers

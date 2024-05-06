@@ -32,3 +32,12 @@
 .contact-form button:hover {
 	background-color: darkgrey;
 }
+
+
+@media screen {
+	.contact-form{
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+	}
+}
