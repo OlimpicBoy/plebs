@@ -168,6 +168,11 @@ input, textarea {border: 2px solid;}
 	.right-content {
 		display: none;
 	}
+	.left-content {
+		/* margin: 0 auto; */
+	
+		margin-bottom: 21px; /* A Fibonacci number */
+	}
 	/* canvas {
 		display: none;
 	} */
